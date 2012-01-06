@@ -1,0 +1,19 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem 1.0
+
+name             mcl
+version          10-201
+description      MCL - a cluster algorithm for graphs.
+long_description \
+    The MCL algorithm is short for the Markov Cluster Algorithm, \
+    a fast and scalable unsupervised cluster algorithm for graphs \
+    based on simulation of (stochastic) flow in graphs.
+maintainers     computer.org:rch
+categories      science
+platforms       darwin
+homepage        http://micans.org/mcl/
+master_sites    http://micans.org/mcl/src/
+checksums       md5 9e8aecb9011560b9c3e55fe0f2d1e791
+configure.args  --enable-blast --mandir=${prefix}/share/man

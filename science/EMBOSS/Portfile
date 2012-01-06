@@ -1,0 +1,29 @@
+# $Id: Portfile 64763 2010-03-15 16:31:33Z nox@macports.org $
+
+PortSystem      1.0
+
+name            EMBOSS
+version         6.3.1
+revision        1
+categories      science
+platforms       darwin
+maintainers     gmail.com:mike.thon
+description     Molecular Biology software analysis package
+long_description    EMBOSS is a free Open Source software analysis package \
+                    specially developed for the needs of the molecular biology user \
+                    community. The software automatically copes with data \
+                    in a variety of formats and even allows transparent \
+                    retrieval of sequence data from the web.
+homepage        http://emboss.sourceforge.net
+master_sites    ftp://emboss.open-bio.org/pub/EMBOSS/
+
+checksums           md5     04d1179b6261103a77e396d54f8ac38e
+
+depends_lib     port:xorg-libX11 \
+                port:jpeg \
+                port:libiconv \
+                port:expat \
+                port:freetype \
+                port:libpng
+
+configure.args  --includedir=${prefix}/include/emboss

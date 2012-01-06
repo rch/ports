@@ -1,0 +1,18 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem 1.0
+
+name             zoem
+version          10-265
+description      Zoem - macro processor
+long_description \
+    Zoem is an interpretive macro/programming language that is \
+    evaluated by the macro processor called zoem.
+maintainers     computer.org:rch
+categories      devel
+platforms       darwin
+homepage        http://micans.org/zoem/
+master_sites    http://micans.org/zoem/src/
+checksums       md5 e24e12ee05c75c323ad2fd5446cc0227
+configure.args  --mandir=${prefix}/share/man

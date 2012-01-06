@@ -1,0 +1,21 @@
+# -*- coding: utf-8; mode: tcl; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- vim:fenc=utf-8:ft=tcl:et:sw=4:ts=4:sts=4
+# $Id$
+
+PortSystem 1.0
+PortGroup  python26 1.0
+
+name             pattern
+version          1.5
+use_zip          yes
+description      Pattern web mining Python module
+long_description \
+    Pattern bundles tools for data retrieval, text analysis \
+    (n-gram search, tf-idf, cosine similarity, etc.) and data \
+    visualization (graph networks).
+maintainers     computer.org:rch
+categories      nlp
+platforms       darwin
+homepage        http://www.clips.ua.ac.be/pages/pattern
+master_sites    http://www.clips.ua.ac.be/media/
+checksums       md5 5a7dd8faf5fd7e2b7c10bdbc3eebc54e
+configure.args  --mandir=${prefix}/share/man
